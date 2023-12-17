@@ -1,4 +1,23 @@
 #include "sort.h"
+
+/**
+ * swap - Swaps the values of two integers.
+ * @a: Pointer to the first integer.
+ * @b: Pointer to the second integer.
+ *
+ * Description: This function takes two integer pointers as parameters and
+ * swaps the values they point to. It is commonly used in sorting algorithms
+ * like Bubble Sort to interchange elements.
+ */
+void swap(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
 /**
  * bubble_sort - This function impliment Bubble sorting
  * algorithm
@@ -8,7 +27,7 @@
  */
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, j, flag, temp;
+	size_t i, j, flag;
 
 	if (array == NULL || size < 2)
 	{
@@ -23,9 +42,7 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				temp = array[j];
-				array[j] = array[j + 1];
-				array[j + 1] = temp;
+				swap(&array[j], &array[j + 1]);
 				flag = 1;
 			}
 			print_array(array, size);
