@@ -1,0 +1,1 @@
+This project is about sorting algorithms. A learner is required to learn at least 4 different sorting algorithms. However, this project covers over 8 of them. This helps to equip students with more than 4.
