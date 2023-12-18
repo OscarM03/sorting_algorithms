@@ -35,5 +35,12 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void quick_sort_recursive(int *array, int low, int high, size_t size);
 int lomuto_partition(int *array, int lb, int ub, size_t size);
+void merge_sort(int *array, size_t size);
+void merge_helper(int array[], int lb, int ub);
+void print_merge_done(const int *array, int lb, int ub);
+void print_merge_step(const int *array, int lb, int mid, int ub);
+void merge(int array[], int lb, int mid, int ub);
+void cpy(int array[], int arr[], int lb, int ub);
+
 
 #endif
