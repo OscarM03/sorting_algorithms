@@ -36,6 +36,7 @@ void heapify(int array[], int size, int i)
 	if (largest != i)
 	{
 		swap(&array[i], &array[largest]);
+		print_array(array, size);
 		heapify(array, size, largest);
 	}
 }
