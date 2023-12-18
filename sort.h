@@ -41,6 +41,7 @@ void print_merge_done(const int *array, int lb, int ub);
 void print_merge_step(const int *array, int lb, int mid, int ub);
 void merge(int array[], int lb, int mid, int ub);
 void cpy(int array[], int arr[], int lb, int ub);
-
+void heap_sort(int *array, size_t size);
+void heapify(int array[], int size, int i);
 
 #endif
